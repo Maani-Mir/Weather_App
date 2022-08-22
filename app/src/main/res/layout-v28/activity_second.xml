@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:background="@color/darkBlue"
+    >
+
+
+    <TextView
+        android:id="@+id/precip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/no_precipitation"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="70dp"
+        android:backgroundTint="@color/purple_500"
+        app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_cloudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/cardCircle"
+        android:text="Tonight"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="20dp"
+        android:textSize="19sp"
+        android:textColor="@color/darkGray"
+        />
+
+    <ImageView
+        android:id="@+id/image_cloudy"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudy"
+        android:outlineSpotShadowColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/temp_cloudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28'C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="237dp"
+        android:layout_marginStart="55dp"
+        android:textSize="25sp"
+        />
+
+
+    <View
+        android:id="@+id/firstView"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="120dp"
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="385dp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/text_thunder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/cardCircle"
+        android:text="Wed"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="150dp"
+        android:textSize="19sp"
+        />
+
+    <ImageView
+        android:id="@+id/image_thunder"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thunder" />
+
+    <TextView
+        android:id="@+id/temp_thunder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23'C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="237dp"
+        android:layout_marginStart="195dp"
+        android:textSize="25sp"
+        />
+
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="385dp"
+        android:layout_marginStart="270dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/text_clud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/cardCircle"
+        android:text="Wed Night"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="290dp"
+        android:textSize="19sp"
+        />
+
+    <ImageView
+        android:id="@+id/image_clud"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clud" />
+
+    <TextView
+        android:id="@+id/temp_clud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24'C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="237dp"
+        android:layout_marginStart="330dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/today_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Today's Details"
+        android:textSize="25sp"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="105dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_cloudy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudy" />
+
+    <TextView
+        android:id="@+id/hrs_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13hrs"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="405dp"
+        android:layout_marginStart="120dp"
+
+        />
+
+    <TextView
+        android:id="@+id/mins_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18mins"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="425dp"
+        android:layout_marginStart="110dp"
+
+        />
+
+    <View
+        android:id="@+id/firstHorizViewTodayDet"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="465dp"
+        android:layout_marginBottom="385dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="300dp"
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
